@@ -17,7 +17,7 @@ export default function Navbar() {
                            bg-zinc-950/650 border-y border-zinc-800/80 shadow-[0_0_0_1px_rgba(0,0,0,0.2)]
                            backdrop-blur-md"
             >
-                <div className="flex items-center justify-between max-w-[1400px] mx-auto">
+                <div className="flex items-center justify-between max-w-[1400px] mx-auto h-full">
 
                     {/* BAL: LOGÓ + BRAND */}
                     <Link href="/" className="flex items-center gap-2 px-4">

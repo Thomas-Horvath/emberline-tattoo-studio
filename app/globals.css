@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+
+/* 45 fokban előtűnő háttérkép: bal alsó -> jobb felső */
+.hero-reveal {
+  mask-image: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.0) 40%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+
+/* jobb felső sarok levágása (triangle cut) */
+.cut-tr {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 64px) 0, /* vágás szélessége */
+    100% 64px,          /* vágás magassága */
+    100% 100%,
+    0 100%
+  );
+}
