@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
           {/* DARK OVERLAY */}
           <div className="absolute inset-0 bg-zinc-950/60" />
 
+          <Navbar />
           {/* PAGE CONTENT */}
           <div className="relative z-10">
             {children}

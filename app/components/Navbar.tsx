@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
-    { href: "#munkaim", label: "Munkáim" },
-    { href: "#stilusok", label: "Stílusok" },
-    { href: "#folyamat", label: "Folyamat" },
-    { href: "#velemenyek", label: "Vélemények" },
+    { href: "/#munkaim", label: "Munkáim" },
+    { href: "/#stilusok", label: "Stílusok" },
+    { href: "/#folyamat", label: "Folyamat" },
+    { href: "/#velemenyek", label: "Vélemények" },
 ];
 
 export default function Navbar() {
