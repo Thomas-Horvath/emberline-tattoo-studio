@@ -36,12 +36,12 @@ export default function SignatureStyles() {
             02 / SIGNATURE STÍLUSOK
           </div>
 
-          <Link
+          {/* <Link
             href="/munkaim"
             className="text-xs tracking-[0.25em] text-zinc-400 hover:text-zinc-100 transition"
           >
             ÖSSZES →
-          </Link>
+          </Link> */}
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
