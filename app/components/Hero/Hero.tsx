@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section className="relative pt-36 h-screen ">
-      <div className="mx-auto max-w-[1400px] px-6 ">
+    <section className="relative pt-36 h-screen " id="hero">
+      <div className="mx-auto max-w-350 px-6 ">
 
 
         {/* HERO PANEL (mint a referencián: nem tölti ki az egész viewportot) */}
-        <div className="relative h-[78vh] min-h-[640px] overflow-hidden  bg-zinc-950/40 cut-tr">
+        <div className="relative h-[78vh] min-h-160 overflow-hidden  bg-zinc-950/40 cut-tr">
           {/* finom háttér texture (ha akarod, maradhat) */}
           <div className="pointer-events-none absolute inset-0 opacity-70" />
 
@@ -16,7 +16,7 @@ export default function Hero() {
           </div>
 
           {/* NARANCS “saroklap” (opcionális, ha akarod a jobb felső kis tab-et) */}
-          <div className="z-10 pointer-events-none absolute -top-3 -right-3 h-20 w-20 bg-orange-500/80" />
+          <div className="z-10 pointer-events-none  absolute -top-3 -right-3 h-20 w-20 bg-orange-500/80" />
 
 
           {/* KÉP HÁTTÉR, NEM FULL SCREEN — a panelen belül */}
