@@ -33,7 +33,7 @@ export default function RootLayout({
           <div className="absolute inset-0 bg-fixed bg-cover  bg-top-right bg-no-repeat bg-[url('/bg.png')]" />
 
           {/* DARK OVERLAY */}
-          <div className="absolute inset-0 bg-zinc-950/60" />
+          <div className="absolute inset-0 bg-zinc-950/70" />
 
           <Navbar />
           {/* PAGE CONTENT */}
