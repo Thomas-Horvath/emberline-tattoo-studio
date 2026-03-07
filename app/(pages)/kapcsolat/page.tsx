@@ -1,7 +1,7 @@
 export default function KapcsolatPage() {
   return (
     <main className="pt-32 pb-20">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-350 px-6">
         <div className="mb-10">
           <div className="text-xs tracking-[0.3em] text-orange-500">
             EMBERLINE / KAPCSOLAT
@@ -81,20 +81,21 @@ export default function KapcsolatPage() {
           </section>
 
           {/* Jobb: űrlap */}
-          <section className="lg:col-span-7">
-            <div className="relative overflow-hidden rounded-xl border border-zinc-800/70 bg-zinc-950/30 p-6">
+          <section className="lg:col-span-7 ">
+            <div className="relative flex flex-col items-center justify-between h-full overflow-hidden rounded-xl border border-zinc-800/70 bg-zinc-950/30 p-6">
               {/* RB accent + pötty */}
-              <div className="pointer-events-none absolute inset-0">
+
+              {/* <div className="pointer-events-none absolute inset-0">
                 <div className="absolute right-0 top-0 h-full w-px bg-orange-500/60" />
                 <div className="absolute bottom-0 left-0 h-px w-full bg-orange-500/60" />
                 <div className="absolute right-0 bottom-0 h-3 w-3 translate-x-1 translate-y-1 rounded-full bg-orange-500 shadow-[0_0_18px_rgba(249,115,22,0.45)]" />
-              </div>
+              </div> */}
 
-              <h2 className="relative text-xs font-semibold tracking-[0.26em] text-zinc-200 uppercase">
+              <h2 className="relative w-full text-xs font-semibold tracking-[0.26em] text-zinc-200 uppercase">
                 Üzenetküldés
               </h2>
 
-              <form className="relative mt-6 grid gap-4">
+              <form className="relative mt-6 grid gap-4 w-full">
                 <div className="grid gap-4 md:grid-cols-2">
                   <Field label="Név" name="name" placeholder="Teljes név" />
                   <Field label="E-mail" name="email" placeholder="email@cim.hu" />

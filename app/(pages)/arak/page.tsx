@@ -9,7 +9,7 @@ const items = [
 export default function ArlistaPage() {
   return (
     <main className="pt-32 pb-20">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-350 px-6">
         <div className="mb-10">
           <div className="text-xs tracking-[0.3em] text-orange-500">
             EMBERLINE / ÁRAK
