@@ -66,7 +66,7 @@ export default function Hero() {
               {/* BAL OLDAL */}
               <div>
                 <div className="mb-6 text-xs tracking-[0.3em] text-orange-500">
-                  01 / FŐOLDAL
+                  # FŐOLDAL
                 </div>
 
                 <h1 className="text-5xl font-bold leading-[0.95] md:text-8xl text-zinc-100">

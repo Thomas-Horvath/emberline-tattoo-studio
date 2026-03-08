@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: " ETS - Általános Szerződési Feltételek",
+};
+
+
 export default function AszfPage() {
   return (
-    <main className="pt-32 pb-20">
-      <div className="mx-auto max-w-4xl px-6">
+    <main className="pt-32 pb-20 min-h-screen flex items-center">
+      <div className="m-auto  max-w-4xl px-6 ">
         <h1 className="text-4xl font-semibold text-zinc-100">
           Általános Szerződési Feltételek
         </h1>

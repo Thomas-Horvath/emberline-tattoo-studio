@@ -33,7 +33,7 @@ export default function SignatureStyles() {
       <div className="mx-auto max-w-350 px-6">
         <div className="mb-8 flex items-center justify-between">
           <div className="text-xs tracking-[0.3em] text-orange-500">
-            02 / SIGNATURE STÍLUSOK
+            # SIGNATURE STÍLUSOK
           </div>
 
       

@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: " ETS - Kapcsolat",
+};
+
+
+
 export default function KapcsolatPage() {
   return (
     <main className="pt-32 pb-20">
@@ -43,8 +51,9 @@ export default function KapcsolatPage() {
 
                 <Row label="Instagram">
                   <a
-                    href="#"
+                    href="https://www.instagram.com"
                     className="text-zinc-200 hover:text-orange-400 transition"
+                    target="_blank"
                   >
                     @emberline.tattoo
                   </a>
@@ -62,34 +71,17 @@ export default function KapcsolatPage() {
               </div>
             </div>
 
-            {/* Map placeholder (opcionális) */}
-            <div className="mt-6 overflow-hidden rounded-xl border border-zinc-800/70 bg-zinc-950/30">
-              <div className="h-56 w-full bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-950">
-                <div className="p-6">
-                  <div className="text-xs tracking-[0.22em] text-zinc-400 uppercase">
-                    Helyszín
-                  </div>
-                  <p className="mt-2 text-sm text-zinc-300">
-                    Budapest (minta cím)
-                  </p>
-                  <p className="mt-1 text-sm text-zinc-500">
-                    Térkép beágyazás később ide jöhet (Google Maps / OpenStreetMap).
-                  </p>
-                </div>
-              </div>
+            {/* Map */}
+            <div className="mt-6 h-56 overflow-hidden rounded-xl border border-zinc-800/70 bg-zinc-950/30">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.590502980424!2d19.03539259154275!3d47.49789022117672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3c504206db%3A0xd744a89933a55784!2zMCBraWxvbcOpdGVya8WR!5e0!3m2!1shu!2shu!4v1772978485131!5m2!1shu!2shu" className="w-full h-full" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </section>
+
+
 
           {/* Jobb: űrlap */}
           <section className="lg:col-span-7 ">
             <div className="relative flex flex-col items-center justify-between h-full overflow-hidden rounded-xl border border-zinc-800/70 bg-zinc-950/30 p-6">
-              {/* RB accent + pötty */}
-
-              {/* <div className="pointer-events-none absolute inset-0">
-                <div className="absolute right-0 top-0 h-full w-px bg-orange-500/60" />
-                <div className="absolute bottom-0 left-0 h-px w-full bg-orange-500/60" />
-                <div className="absolute right-0 bottom-0 h-3 w-3 translate-x-1 translate-y-1 rounded-full bg-orange-500 shadow-[0_0_18px_rgba(249,115,22,0.45)]" />
-              </div> */}
 
               <h2 className="relative w-full text-xs font-semibold tracking-[0.26em] text-zinc-200 uppercase">
                 Üzenetküldés
@@ -116,14 +108,15 @@ export default function KapcsolatPage() {
                 <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
                   <button
                     type="button"
-                    className="rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-orange-400 transition"
+                    className=" cursor-pointer rounded-lg bg-orange-500 px-6 py-3 text-sm font-semibold text-zinc-950 hover:bg-orange-400 transition"
                   >
-                    Küldés (minta)
+                    Küldés
                   </button>
 
                   <a
-                    href="#"
+                    href="https://www.instagram.com"
                     className="text-sm text-zinc-400 hover:text-orange-400 transition"
+                    target="_blank"
                   >
                     Inkább DM-ben? Instagram →
                   </a>
@@ -137,6 +130,8 @@ export default function KapcsolatPage() {
   );
 }
 
+
+
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex items-center justify-between gap-4">
@@ -147,6 +142,9 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
     </div>
   );
 }
+
+
+
 
 function Field({
   label,
