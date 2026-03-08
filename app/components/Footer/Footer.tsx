@@ -1,7 +1,7 @@
 // components/Footer.tsx
 import Image from "next/image";
 import Link from "next/link";
-import navItems from "@/Data/Navlinks.js";
+import {navItems} from "@/Data/data.js";
 import { FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa";
 
 

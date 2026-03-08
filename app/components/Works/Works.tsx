@@ -1,15 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import {works} from "@/Data/data"
 
-const works = [
-  { id: 1, title: "Óra & Rózsa", src: "/work/1.jpg" },
-  { id: 2, title: "Minimal Line", src: "/work/1.jpg" },
-  { id: 3, title: "Sárkány", src: "/work/1.jpg" },
-  { id: 4, title: "Maszk", src: "/work/1.jpg" },
-  { id: 5, title: "Macska", src: "/work/1.jpg" },
-  { id: 6, title: "Fül Piercing", src: "/work/1.jpg" },
-  { id: 7, title: "Realistic Dragon", src: "/work/1.jpg" },
-];
 
 export default function HomeGallery() {
   return (
@@ -19,7 +11,7 @@ export default function HomeGallery() {
         {/* HEADER */}
         <div className="mb-10 flex items-center justify-between">
           <div className="text-xs tracking-[0.3em] text-orange-500 uppercase">
-            03 / néhány munkám
+            # néhány munkám
           </div>
 
           <Link

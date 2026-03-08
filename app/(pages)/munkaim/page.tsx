@@ -1,8 +1,12 @@
-const works = Array.from({ length: 12 }).map((_, i) => ({
-  id: i,
-  title: `Munka #${i + 1}`,
-  tag: i % 3 === 0 ? "Blackwork" : i % 3 === 1 ? "Fine line" : "Dark illustrative",
-}));
+import { works } from "@/Data/data"
+import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: " ETS - Munkáim",
+};
+
+
 
 export default function MunkakPage() {
   return (
@@ -19,8 +23,9 @@ export default function MunkakPage() {
               className="group relative overflow-hidden  border border-zinc-800/70 bg-zinc-950/40"
             >
               {/* Fake image */}
-              <div className="relative h-64 w-full bg-linear-to-br from-zinc-900 via-zinc-800 to-zinc-950">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,115,22,0.15),transparent_60%)]" />
+              <div className="relative aspect-square w-full bg-linear-to-br from-zinc-900 via-zinc-800 to-zinc-950">
+                {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(249,115,22,0.15),transparent_60%)]" /> */}
+                <Image src={w.src} alt={w.title} fill className="object-cover"/>
               </div>
 
               <div className="relative p-5">
