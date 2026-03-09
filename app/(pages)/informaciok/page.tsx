@@ -84,9 +84,9 @@ function InfoSection({
   return (
     <section className="relative overflow-hidden border border-zinc-800/70 bg-zinc-950/30 p-8">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute right-0 top-0 h-full w-px bg-orange-500/45" />
-        <div className="absolute bottom-0 left-0 h-px w-full bg-orange-500/45" />
-        <div className="absolute bottom-0 right-0 h-3 w-3 translate-x-1 translate-y-1 rounded-full bg-orange-500 shadow-[0_0_18px_rgba(249,115,22,0.35)]" />
+        <div className="absolute hero-reveal-rev right-0 top-0 h-full w-px bg-orange-500/45" />
+        <div className="absolute hero-reveal bottom-0 left-0 h-px w-full bg-orange-500/45" />
+        <div className="absolute bottom-0 right-0 h-3 w-3 translate-x-1 translate-y-1 rounded-full bg-orange-500/80 shadow-[0_0_18px_rgba(249,115,22,0.35)]" />
       </div>
 
       <h2 className="relative text-2xl font-semibold text-zinc-100">{title}</h2>
