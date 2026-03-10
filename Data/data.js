@@ -24,3 +24,11 @@ export const works = [
     { id: 9, title: "Geometria", src: "/gallery/9.jpg", tag: "Geometric" },
 ];
 
+
+export const items = [
+  { name: "Mini tetoválás (2–4 cm)", price: "15 000 Ft-tól", note: "Egyszerű vonalas / minimal" },
+  { name: "Kicsi (5–8 cm)", price: "25 000 Ft-tól", note: "Finom részletek" },
+  { name: "Közepes (10–15 cm)", price: "45 000 Ft-tól", note: "Árnyékolás / blackwork elemek" },
+  { name: "Nagy (20+ cm)", price: "90 000 Ft-tól", note: "Konzultáció alapján" },
+  { name: "Cover-up / javítás", price: "Egyedi", note: "Régi minta felülmunkálása" },
+];
