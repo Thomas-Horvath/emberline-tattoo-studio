@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 
 
 
@@ -8,21 +8,21 @@ const styles = [
     title: "Fine line",
     desc: "Finom, precíz vonalak – tiszta forma, visszafogott részletek.",
     tags: ["Flora", "Minimal"],
-    img: "/gallery/fine-line.jpg",
+    img: "/gallery/1.jpg",
    
   },
   {
     title: "Blackwork",
     desc: "Erős kontraszt, mély fekete felületek – határozott kompozíció.",
     tags: ["Dark", "Geometric"],
-    img: "/gallery/blackwork.jpg",
+    img: "/gallery/2.jpg",
     
   },
   {
     title: "Dark illustrative",
     desc: "Sötétebb hangulat, illusztratív történetek – nyers, karakteres formák.",
     tags: ["Skulls", "Surreal"],
-    img: "/gallery/dark-illustrative.jpg",
+    img: "/gallery/4.jpg",
   
   },
 ];
