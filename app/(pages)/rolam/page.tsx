@@ -41,7 +41,7 @@ export default function RolamPage() {
                     {/* kép */}
                     <div className="relative h-105 w-full overflow-hidden">
                         <Image
-                            src="/artist/1.jpg"
+                            src="/artist/1.webp"
                             alt="Tetováló művész"
                             fill
                             className="object-cover"
@@ -82,7 +82,7 @@ export default function RolamPage() {
                 <section className="mt-20 grid gap-6 md:grid-cols-3">
                     <div className="relative h-80 overflow-hidden">
                         <Image
-                            src="/artist/2.jpg"
+                            src="/artist/2.webp"
                             alt="Tetováló munka közben"
                             fill
                             className="object-cover"
@@ -91,7 +91,7 @@ export default function RolamPage() {
 
                     <div className="relative h-80 overflow-hidden">
                         <Image
-                            src="/artist/3.jpg"
+                            src="/artist/3.webp"
                             alt="Tetováló stúdió"
                             fill
                             className="object-cover"
@@ -100,7 +100,7 @@ export default function RolamPage() {
 
                     <div className="relative h-80 overflow-hidden">
                         <Image
-                            src="/artist/4.jpg"
+                            src="/artist/4.webp"
                             alt="Tetováló művész"
                             fill
                             className="object-cover"
