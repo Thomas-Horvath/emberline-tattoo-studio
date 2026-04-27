@@ -1,31 +1,7 @@
 import Image from "next/image";
+import { styles } from "@/Data/data.js";
 
 
-
-
-const styles = [
-  {
-    title: "Fine line",
-    desc: "Finom, precíz vonalak – tiszta forma, visszafogott részletek.",
-    tags: ["Flora", "Minimal"],
-    img: "/gallery/1.jpg",
-   
-  },
-  {
-    title: "Blackwork",
-    desc: "Erős kontraszt, mély fekete felületek – határozott kompozíció.",
-    tags: ["Dark", "Geometric"],
-    img: "/gallery/2.jpg",
-    
-  },
-  {
-    title: "Dark illustrative",
-    desc: "Sötétebb hangulat, illusztratív történetek – nyers, karakteres formák.",
-    tags: ["Skulls", "Surreal"],
-    img: "/gallery/4.jpg",
-  
-  },
-];
 
 export default function SignatureStyles() {
   return (
@@ -36,7 +12,7 @@ export default function SignatureStyles() {
             # SIGNATURE STÍLUSOK
           </div>
 
-      
+
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
@@ -118,11 +94,11 @@ function AccentBorder() {
 
   return (
     <div className="pointer-events-none absolute inset-0">
-        <>
-          <div className={`${line} hero-reveal-rev right-0 top-0 h-full w-px`} />
-          <div className={`${line} bottom-0 hero-reveal left-0 h-px w-full`} />
-          <div className={`${dot} right-0 bottom-0 translate-x-1 translate-y-1`} />
-        </>
+      <>
+        <div className={`${line} hero-reveal-rev right-0 top-0 h-full w-px`} />
+        <div className={`${line} bottom-0 hero-reveal left-0 h-px w-full`} />
+        <div className={`${dot} right-0 bottom-0 translate-x-1 translate-y-1`} />
+      </>
     </div>
   );
 }

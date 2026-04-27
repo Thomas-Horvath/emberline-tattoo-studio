@@ -20,7 +20,7 @@ export default function RootLayout({
         <div className="relative min-h-screen overflow-hidden">
 
           {/* BACKGROUND IMAGE */}
-          <div className="absolute inset-0 bg-fixed bg-cover  bg-top-right bg-no-repeat bg-[url('/bg.png')]" />
+          <div className="absolute inset-0 bg-fixed bg-cover  bg-top-right bg-no-repeat bg-[url('/bg.webp')]" />
 
           {/* DARK OVERLAY */}
           <div className="absolute inset-0 bg-zinc-950/70" />

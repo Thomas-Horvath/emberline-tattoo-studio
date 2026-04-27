@@ -36,7 +36,7 @@ export default function Hero() {
             {/* KÉP HÁTTÉR, NEM FULL SCREEN — a panelen belül */}
             <div
               className="absolute inset-0
-                         bg-[url('/hero.jpg')] bg-center bg-cover
+                         bg-[url('/hero.webp')] bg-center bg-cover
                          hero-reveal opacity-100"
             />
 

@@ -1,35 +1,9 @@
 "use client";
 
 import { useEffect, useState, useMemo } from "react";
+import { reviews } from "@/Data/data.js";
+import { FaQuoteRight, FaStar } from "react-icons/fa";
 
-const reviews = [
-    {
-        name: "Anna",
-        text: "Nagyon nyugodt légkör, precíz munka és végig éreztem, hogy figyelembe vannak véve az elképzeléseim.",
-    },
-    {
-        name: "Máté",
-        text: "Pont azt a letisztult, sötétebb hangulatot kaptam, amit szerettem volna. A végeredmény még jobb lett, mint vártam.",
-    },
-    {
-        name: "Dóra",
-        text: "A konzultációtól a kész tetoválásig végig profi volt minden. Igényes, átgondolt, nagyon korrekt élmény.",
-    },
-    {
-        name: "Bence",
-        text: "Nem sablonos hozzáállás, hanem valódi figyelem. Ritka az ilyen nyugodt, mégis magabiztos stílus.",
-    },
-    {
-        name: "Eszter",
-        role: "Vendég",
-        text: "Tiszta, rendezett stúdió, jó kommunikáció, és nagyon szép lett a munka.",
-    },
-    {
-        name: "Tamás",
-        role: "Vendég",
-        text: "A tervezési folyamat is nagyon korrekt volt. Nem csak gyorsan elkészült, hanem átgondolt lett.",
-    },
-];
 const VISIBLE_COUNT = 3;
 
 export default function Testimonial() {
@@ -64,12 +38,12 @@ export default function Testimonial() {
     return (
         <section id="velemenyek" className="py-40">
             <div className="mx-auto max-w-350 px-6">
-                <div className="mb-10 flex items-center justify-between">
+                <div className="flex items-center justify-between mb-10">
                     <div>
                         <div className="text-xs tracking-[0.3em] text-orange-500">
-                           # VÉLEMÉNYEK
+                            # VÉLEMÉNYEK
                         </div>
-                        <h2 className="mt-3 text-3xl font-semibold text-zinc-100 md:text-4xl">
+                        <h2 className="mt-3 text-3xl font-semibold md:text-4xl text-zinc-100">
                             Amit a vendégek mondanak
                         </h2>
                     </div>
@@ -77,14 +51,24 @@ export default function Testimonial() {
                     <div className="flex items-center gap-3">
                         <button
                             onClick={prev}
-                            className="cursor-pointer inline-flex h-10 w-10 items-center justify-center border border-zinc-800/70 bg-zinc-950/40 text-zinc-300 transition hover:border-orange-500/40 hover:text-orange-400"
+                            className="inline-flex items-center justify-center
+                                       h-10 w-10
+                                       bg-zinc-950/40 border border-zinc-800/70 hover:border-orange-500/40
+                                       hover:text-orange-400
+                                       cursor-pointer transition
+                                       text-zinc-300"
                             aria-label="Előző vélemény"
                         >
                             ←
                         </button>
                         <button
                             onClick={next}
-                            className="cursor-pointer inline-flex h-10 w-10 items-center justify-center border border-zinc-800/70 bg-zinc-950/40 text-zinc-300 transition hover:border-orange-500/40 hover:text-orange-400"
+                            className="inline-flex items-center justify-center
+                                       h-10 w-10
+                                       bg-zinc-950/40 border border-zinc-800/70 hover:border-orange-500/40
+                                       hover:text-orange-400
+                                       cursor-pointer transition
+                                       text-zinc-300"
                             aria-label="Következő vélemény"
                         >
                             →
@@ -95,23 +79,43 @@ export default function Testimonial() {
 
 
 
-                <div className="grid gap-6 md:grid-cols-3">
+                <div className="grid md:grid-cols-3 gap-6">
                     {visibleReviews.map((review, index) => (
                         <article
                             key={`${review.name}-${startIndex}-${index}`}
-                            className="relative overflow-hidden border border-zinc-800/70 bg-zinc-950/70 p-6 min-h-55"
+                            className="relative overflow-hidden p-6 min-h-55 border border-zinc-800/70 bg-zinc-950/70"
                         >
                             {/* RB accent */}
-                            <div className="pointer-events-none absolute inset-0">
-                                <div className="absolute hero-reveal-rev right-0 top-0 h-full w-px bg-orange-500/45" />
-                                <div className="absolute hero-reveal bottom-0 left-0 h-px w-full bg-orange-500/45" />
-                                <div className="absolute right-0 bottom-0 h-3 w-3 translate-x-1 translate-y-1 rounded-full bg-orange-500 shadow-[0_0_18px_rgba(249,115,22,0.35)]" />
+                            <div className="absolute inset-0 pointer-events-none">
+                                <div className="absolute right-0 top-0 h-full w-px bg-orange-500/45 hero-reveal-rev" />
+                                <div className="absolute bottom-0 left-0 h-px w-full bg-orange-500/45 hero-reveal" />
+                                <div className="absolute bottom-0 right-0
+                                                h-3 rounded-full w-3
+                                                bg-orange-500 shadow-[0_0_18px_rgba(249,115,22,0.35)]
+                                                translate-x-1 translate-y-1" />
                             </div>
 
-                            <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-orange-500/20 blur-3xl" />
+
+
+                            <div className="absolute
+                                            h-28 rounded-full w-28
+                                            bg-orange-500/20
+                                            blur-3xl
+                                            pointer-events-none
+                                            -right-10 -top-10" />
 
                             <div className="relative">
-                                <div className="text-6xl leading-none text-orange-500/60">“</div>
+                                <div className="flex items-center justify-between mb-4">
+                                    <div className="text-yellow-500 flex text-2xl gap-0.5">
+                                        <FaStar />
+                                        <FaStar />
+                                        <FaStar />
+                                        <FaStar />
+                                        <FaStar />
+                                    </div>
+                                    <div className="text-3xl leading-none text-orange-500/80"><FaQuoteRight /></div>
+                                </div>
+
 
                                 <p className="mt-2 text-sm leading-7 text-zinc-300">
                                     {review.text}
@@ -133,12 +137,14 @@ export default function Testimonial() {
 
 
                 {/* dots */}
-                <div className="mt-6 flex items-center justify-center gap-3">
+                <div className="flex items-center justify-center mt-6 gap-3">
                     {reviews.map((_, index) => (
                         <button
                             key={index}
                             onClick={() => setStartIndex(index)}
-                            className={`h-3.5 w-3.5 rounded-full transition cursor-pointer ${startIndex === index
+                            className={`h-3.5 rounded-full w-3.5
+                                        cursor-pointer transition
+                                        ${startIndex === index
                                     ? "bg-orange-500"
                                     : "bg-zinc-700 hover:bg-zinc-500"
                                 }`}
